@@ -1,0 +1,105 @@
+TAG: usb_release_0_4_6_17MAY
+1. SOF(uctl_frameCounter) block has been implemented and integrated with usb_controller_core,
+2. LPM logic has been added in PD and 
+   protocol engine block 
+3. SETUP transfer is upgraded for some error scenarios.
+
+
+
+TAG: usb_release_0_4_5_14MAY
+
+1.  Basic SETUP transfer has been implemented.
+2. Interrupt logic has been added in register block.
+3. Endpoint  data  block has been updated for re-initialization
+of isochronous data PID  at SOF.
+ 
+
+
+TAG: usb_release_0_4_4_03MAY
+RegisterBlock has been updated for internal and external DMA 
+and memory access without DMA
+System Endpoint Controllers are updated for list mode.
+
+
+TAG: usb_release_0_4_3_26APRIL
+fixes have been done in following modules.
+1. uctlk_sept
+2. uctl_sysControllerTx
+3. uctl_sepr
+4. uctl_sysControllerRx
+5. uctl_asyncFifo
+6. uctl_dmaRx
+7. uctl_dmaTx
+8. uctl_ahbMaster
+9. uctl_ahbCore
+10. uctl_packet_decoder
+11. uctl_protocol_engine
+12. uctl_epcr
+13. uctl_epct.
+14. usb_controller_core
+15. uctl_ahbSlave
+
+
+
+TAG: 0_4_2_18APRIL2013
+    1. current release is comliant to USB_spec_ver0.4 
+    2. some bug fixes have been done in following modules.
+   "usb_controller_core.v"        
+   "uctl_protocol_engine.v"        
+   "uctl_epcr.v"            
+   "uctl_packet_decoder.v"
+   "uctl_ahbRx.v" 
+   "uctl_ahbTx.v" 
+   
+
+TAG: 0_4_1_05APRIL2013
+   similar to TAG: 0_4_01APRIL2013 with register block is compliant
+   to USB_spec_ver0.4
+
+
+TAG: 0_4_01APRIL2013
+
+As per USB_spec_ver0.3 
+   Basic pipe cleaning has been done.
+   basic test of usb2.0 IN , usb2.0 OUT, system IN, system OUT paths 
+   and register read/write through AHB slave tests are  passing.
+
+
+TAG: 0_3_15MAR2013
+
+Release Notes:
+
+1. Unverified USB2.0 first RTL release.
+2. List of modules 
+   "usb_controller.v"
+   "usb_controller_core.v"
+   "usb_controller_memory.v"
+   "uctl_packet_decoder.v"
+   "uctl_protocol_engine.v" 
+   "uctl_epcr.v"            
+   "uctl_epct.v"            
+   "uctl_eptd.v"            
+   "uctl_sept.v"            
+   "uctl_sysControllerTx.v" 
+   "uctl_sepr.v"            
+   "uctl_sysControllerRx.v" 
+   "uctl_dmaRx.v"           
+   "uctl_registerBlock.v"   
+   "uctl_packet_assembler.v" 
+   "uctl_cmdIfReg.v"          
+   "uctl_cmdIfMif.v"          
+   "uctl_ahbMaster.v"       
+   "uctl_dmaTx.v"           
+   "syncFifo.v"
+   "async_fifo.v"
+   "uctl_ahbCore.v"
+   "uctl_ahbRx.v" 
+   "uctl_ahbTx.v" 
+   "uctl_ahbSlave.v"
+   "uctl_crc5Gen.v"
+   "crc5_chkr.v"
+   "uctl_sysCmdMemRW.v"
+3. Pending features to be coded:
+   1. OTG related state machine
+   2. Reset/Suspend state machine
+   3. clock partition related changes 

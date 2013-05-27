@@ -1,0 +1,4 @@
+   SYS_CORE_SYNC = 1'b1,
+   CORE_PHY_SYNC = 1'b0,
+   MEM_ADDR_SIZE = 12,
+   MEM_DATA_SIZE = 32
